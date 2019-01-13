@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <title>Hangman</title>
+</head>
+<body>
+    
+    <!-- Jumbo the Tron -->
+    <div class="jumbotron">
+        <h1 class="text-center">Hangman Game</h1>
+        <h3 class="text-center">Try to guess the word!</h3>
+    </div>
+    
+    <!-- Cards -->
+    <div class="container">
+        <div class="row">
+            <!-- Hangman Image -->
+            <div class="col-lg-4">
+            <div class="card">
+                <h3 class="card-header">Hangman</h3>
+                <div class="card-body">
+                    <img src="assets/images/" alt="">
+                    <i class="fab fa-accessible-icon"></i>
+                </div>
+            </div>
+            </div>
+            <!-- Guess Cards -->
+            <div class="col-lg-6">
+            <div class="card">
+                <h3 class="card-header">Guesses</h3>
+                <div class="card-body">
+                    <h1 id="word"></h1>
+                    <hr>
+                    <h1 id="guess"></h1>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Add Javascript -->
+    <script type="text/javascript" src="assets/js/game.js"></script>
+
+</body>
+</html>
