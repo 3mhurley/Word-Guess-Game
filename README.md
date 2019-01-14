@@ -21,3 +21,9 @@
 ### Links
 
 [https://3mhurley.github.io/Word-Guess-Game/](https://3mhurley.github.io/Word-Guess-Game/)
+
+#### To Be Fixed...
+
+* Background theming
+* Sounds
+* Better fluidity after picking theme
