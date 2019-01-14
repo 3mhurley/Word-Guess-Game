@@ -14,7 +14,7 @@
 <body>
     
     <!-- Jumbo the Tron -->
-    <div class="jumbotron">
+    <div class="jumbotron p-3 mb-2 bg-success text-white">
         <h1 class="text-center">Hangman Game</h1>
         <h3 class="text-center">Try to guess the word!</h3>
     </div>
@@ -24,30 +24,41 @@
         <div class="row">
             <!-- Hangman Image -->
             <div class="col-lg-4">
-            <div class="card">
-                <h3 class="card-header">Hangman</h3>
-                <div class="card-body">
-                    <img src="assets/images/" alt="">
-                    <i class="fab fa-accessible-icon"></i>
+                <div class="card">
+                    <img class="card-img-top" src="assets/images/hangman.png" alt="Hangman image">
+                    <div class="card-body py-0">
+                        <div class="col-md-6 float-left">
+                            <h5 id="wins" class="card-title">Wins: 0</h5>
+                        </div>
+                        <div class="col-md-6 float-left">
+                            <h5 id="numGuess" class="card-title">Guesses: 0</h5>
+                        </div>
+                    </div>
+                    <div class="card-body clearfix pt-0">
+                        <hr>
+                        <h5 class="card-title">Instructions:</h5>
+                        <p class="card-text">Type a letter to guess. Only letters are valid.</p>
+                    </div>
                 </div>
-            </div>
             </div>
             <!-- Guess Cards -->
-            <div class="col-lg-6">
-            <div class="card">
-                <h3 class="card-header">Guesses</h3>
-                <div class="card-body">
-                    <h1 id="word"></h1>
-                    <hr>
-                    <h1 id="guess"></h1>
+            <div class="col-lg-8 ">
+                <div class="card text-center ">
+                    <h3 id="title" class="card-header bg-primary text-white">Hit any key to start</h3>
+                    <div class="card-body">
+                        <h5 id="wordTitle"></h5>
+                        <p id="word" class="card-text"></p>
+                        <hr>
+                        <h5 id="guessTitle"></h5>
+                        <p id="guess" class="card-text"></p>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </div>
     
     <!-- Add Javascript -->
-    <script type="text/javascript" src="assets/js/game.js"></script>
+    <script type="text/javascript" src="assets/js/objGame.js"></script>
 
 </body>
 </html>
